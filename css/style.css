@@ -49,7 +49,7 @@ img{
 }
 /*Header theme*/
 header{
-    background: no-repeat url("/asset/image/rue_neon.jpg");
+    background: no-repeat url("../asset/image/rue_neon.jpg");
     height: 100vh;
 }
 .logo{
