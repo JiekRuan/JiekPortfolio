@@ -25,20 +25,62 @@
                         <a href="#skills" class="nav_link">Skills</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#portfolio" class="nav_link">Portfolio</a>
+                        <a href="./projet.html" class="nav_link">Projet</a>
                     </li>
                     <li class="nav_item">
                         <a href="#contact" class="nav_link">Contact</a>
                     </li>
                 </ul>
             </div>  
-            <img src="https://img.icons8.com/ios/50/000000/power-off-button--v1.png" class="button_on" alt="button"/> 
            </nav>
         <p class="presentation">Hello there my name is <br> <span> &lt; Jiek Ruan &gt;</span> and i'm a web developer</p>
     </header>
-    <section class="about">
+    <main>
+    <section class="about" id="about">
         <h2>Somethings about me</h2>
         <p>Web developer for more than 2 years</p>
+        <div class="box-timeline">
+
+            <div class="ligne"></div>
+    
+            <div class="rond r1" data-anim="1">2019</div>
+            <div class="rond r2" data-anim="2">2021</div>
+            <div class="rond r3" data-anim="3">&#128187;</div>
+            <div class="rond r4" data-anim="4">&#128187;</div>
+    
+    
+            <section class="box b1" data-anim="1">
+                <h2>Baccalauréat technologique SPCL</h2>
+                <p>
+                    Lycée Léonard de Vinci 1 place Léonard de vinci, 91240 Saint-Michel-sur-Orge <br><br> option physique-chimie
+                </p>
+                <a href="#" class="btn">Voir plus</a>
+            </section>
+            <section class="box b2" data-anim="2">
+                <h2>Brevet de Technicien Supérieur SIO</h2>
+                <p>
+                    ITIC Paris 190bis Boulevard de Charonne, 75020 Paris <br><br> Option programmation et développement web 
+                </p>
+                <a href="#" class="btn">Voir plus</a>
+            </section>
+            <section class="box b3" data-anim="3">
+                <h2>Li jin corporation</h2>
+                <p>
+                    Stage professionnel réalisé dans le cadre scolaire de 1er année pour une durée de 6 semaines
+                </p>
+                <a href="#" class="btn">Voir plus</a>
+            </section>
+            <section class="box b4" data-anim="4">
+                <h2>Association Keur Kamer</h2>
+                <p>
+                    Stage professionnel réalisé dans le cadre scolaire de 2ème année pour une durée de 6 semaines
+                </p>
+                <a href="#" class="btn">Voir plus</a>
+            </section>
+    
+        </div>       
+    </section>
+    <section class="flexbox">
         <div class="skills">
             <h3>Mes compétences</h3>
             <ul class="skill-list">
@@ -64,8 +106,49 @@
                 </li>
             </ul>
         </div>
-        
+        <div class="application">
+            <h3>Mes application utilisés</h3>
+            <ul class="app-list">
+                <li>
+                    <figure>
+                        <img src="./asset/application/Visual_Studio_Code.svg.png" alt="Vscode">
+                        <figcaption><p>VSCode</p></figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./asset/application/eclipse.png" alt="eclipse">
+                        <figcaption><p>eclipse</p></figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./asset/application/nodejslogo.png" alt="node js">
+                        <figcaption><p>Node js</p></figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./asset/application/gitlogo.png" alt="git">
+                        <figcaption><p>Git</p></figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./asset/application/postman.png" alt="postman">
+                        <figcaption><p>Postman</p></figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./asset/application/Postgresql_elephant.svg.png" alt="pgadmin">
+                        <figcaption><p>Pgadmin</p></figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
     </section>
+    </main>
     <!-- Mon footer -->
     <footer>
         <div class="footer-content">
@@ -84,6 +167,9 @@
         </div>
     </footer>
     <script src="./js/index.js"></script>
-    <script src="./js/circle-progress.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </body>
 </html>

@@ -11,3 +11,17 @@
         transition: .3s;
     }
 }
+@media screen and (max-width: 1000px) {
+
+    .ligne {
+        position: relative;
+        left: 20rem;
+    }
+    .rond {
+        left: calc(50% + 20rem);
+    }
+    .box {
+        left: calc(50% - 5rem)
+    }
+
+}

@@ -49,7 +49,7 @@ img{
 }
 /*Header theme*/
 header{
-    background: no-repeat url("/asset/image/rue_neon.jpg");
+    background: no-repeat url("../asset/image/rue_neon.jpg");
     height: 100vh;
 }
 .logo{
@@ -84,24 +84,116 @@ header{
 .nav_link{
     color: var(--color-hover);
 }
+span{
+    font-weight: bolder;
+}
 .presentation{
     color: #fff;
     font-size: 5rem;
     display: block;
     margin: 30vh 5rem 0;
 }
-span{
-    font-weight: bolder;
-}
 /*About theme*/
 .about{
     color: #fff;
-    height: 100vh;
 }
 .about h2,.about p{
     text-align: center;
     margin: 1rem;
 }
+.flexbox{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+/* Parcours */
+.box-timeline {
+    width: 100%;
+    height: 130rem;
+    background: #f1f1f1;
+    position: relative;
+    padding: 8rem 0 25rem 0;
+    background-color: var(--color-letter);
+}
+
+.ligne {
+    height: 100rem;
+    width: .8rem;
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+}
+
+.rond {
+    font-weight: 300;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background: rgb(250, 250, 250);
+    position: absolute;
+    /* border: .1rem solid #1C1D1E; */
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #000;
+}
+/* 1000 - 160 + 80 / 3 =~ 306 */
+.r1{top: 8rem;}
+.r2{top: 38.6rem;}
+.r3{top: 69.2rem;}
+.r4{top: 100rem;}
+
+.box {
+    color: #333;
+    width: 40rem;
+    min-height: 20rem;
+    padding: 2rem;
+    border-radius: .3rem;
+    height: auto;
+    background: var(--color-hover);
+    box-shadow: 0 1rem 1.5rem rgba(0,0,0,0.5);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.b1 {
+    top: 8rem;
+    left: calc(50% - 27rem);
+}
+.b2 {
+    top: 38.6rem;
+    left: calc(50% + 27rem);
+}
+.b3 {
+    top: 69.2rem;
+    left: calc(50% - 27rem);
+}
+.b4 {
+    top: 100rem;
+    left: calc(50% + 27rem);
+}
+
+.box p {
+    line-height: 2rem;
+    font-size: 1.8rem;
+    margin: 1rem 0 2rem 0;
+}
+.btn {
+    display: block;
+    background: var(--neon-blue);
+    padding: 1rem;
+    width: 15rem;
+    text-align: center;
+    color: #f1f1f1;
+    text-decoration: none;
+    border-radius: .3rem;
+    margin-top: 1rem;
+    margin: 0 auto;
+}
+/* Skills thème */
 .skill-list{
     text-transform: uppercase;
 }
@@ -109,9 +201,11 @@ span{
     text-align: center;
 }
 .skills{
+    color: #fff;
     width: 50vh;
     margin: 6rem auto;
     padding: 2rem;
+    border-radius: 1rem;
     box-shadow: 0 1.4rem 2.8rem rgba(000, 000, 000, 0.25), 0 1rem 1rem rgba(000, 000, 000, 0.22);
 }
 .skills li{
@@ -169,6 +263,33 @@ span{
     width: 30%;
     animation: java 2s;
 }
+/* Application theme */
+.application{
+    color: #fff;
+    width: 50vh;
+    margin: 6rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 1.4rem 2.8rem rgba(000, 000, 000, 0.25), 0 1rem 1rem rgba(000, 000, 000, 0.22);
+}
+.application h3{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.application img{
+    display: block;
+    width: 40%;
+    height: auto;
+    margin: 1rem auto;
+}
+.application ul li figure figcaption p{
+    text-align: center;
+}
+.app-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
 /*Footer theme*/
 footer{
     margin-top: auto;
@@ -177,6 +298,7 @@ footer{
     /* width: 100vw; */
     padding-top: 4rem;
     color: #fff;
+    border-top: 3rem solid #000;
 }
 .footer-content{
     display: flex;
