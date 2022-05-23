@@ -47,7 +47,63 @@ img{
     --clear-purple: #C44CF3;
     --clear-blue: #69F5FF;
 }
-/*header theme*/
+/* Page des projets */
+.projet_list{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--color-card);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    margin: 0 auto;
+    text-align: center;
+}
+.projet_bloc, .veille_technologique{
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 60vw;
+    margin: 2rem auto;
+    box-shadow: .5rem .5rem 1.5rem .5rem #131313;
+}
+.projet_bloc h2, .veille_technologique h2{
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--color-background);
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+.projet_bloc li{
+    border: solid var(--color-letter);
+    border-radius: 1rem;
+    margin: 1rem;
+}
+.veille_technologique figure{
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    background-color: var(--neon-blue);
+    margin: 2rem auto;
+    box-shadow: .5rem .5rem 1.5rem .5rem #131313;
+}
+.veille_technologique figure a{
+    border: solid;
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    color: #fff;
+}
+figcaption{
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: var(--color-background);
+    text-align: center;
+}
+/*Projet complementaire theme*/
 .logo{
     font-size: 3rem;
     margin-left: 2rem;
